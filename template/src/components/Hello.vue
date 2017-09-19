@@ -23,9 +23,10 @@
 <script>
 export default {
   name: 'hello',
+  props: ['msg'],
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: this.msg || 'Welcome to Your Vue.js App'
     }
   }
 }
