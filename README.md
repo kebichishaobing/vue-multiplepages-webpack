@@ -23,6 +23,9 @@ $ cd new-project
 $ npm install
 ```
 
+## change to multiple pages main commit
+https://github.com/kebichishaobing/vue-multiplepages-webpack/commit/9a2abd8306b0114d4f5e7a07a6de53fb354fc7db
+
 #### Dev
 
 ```bash
