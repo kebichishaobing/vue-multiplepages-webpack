@@ -2,15 +2,14 @@ var path = require('path')
 var utils = require('./utils')
 var config = require('../config')
 var vueLoaderConfig = require('./vue-loader.conf')
+var glob = require('glob');
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
 
-module.exports = {
-  entry: {
-    app: './src/main.js'
-  },
+var webpackConfig = {
+  entry: {},
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',
@@ -73,3 +72,11 @@ module.exports = {
     ]
   }
 }
+
+glob.sync('./src/pages/**/main.js').forEach(pagePath => {
+    const viewName = pagePath.split('./src/pages/')[1].split('/main.js')[0];
+
+    webpackConfig.entry[viewName] = pagePath;
+});
+
+module.exports = webpackConfig;
