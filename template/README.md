@@ -18,7 +18,7 @@
 
 ``` bash
 $ npm install -g vue-cli
-$ vue init kebichishaobing/vue-cli-multiplepage-webpack new-project
+$ vue init kebichishaobing/vue-multiplepages-webpack new-project
 $ cd new-project
 $ npm install
 ```
