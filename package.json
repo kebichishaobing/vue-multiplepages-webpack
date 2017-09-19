@@ -1,0 +1,9 @@
+{
+    "name": "vue-cli-multiplepage-webpack",
+    "version": "0.0.1",
+    "license": "MIT",
+    "description": "A vue project template base on vue-cli webapck model",
+    "devDependencies": {
+        "vue-cli": "^2.8.1"
+    }
+}
